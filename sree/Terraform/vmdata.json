@@ -1,0 +1,14 @@
+{
+  "ram": "4096",
+  "processors": "2",
+  "min_ram": "1024",
+  "generation": "1",
+  "path": "S:\\VirtualLabs\\hyperv",
+  "SourceVhdpath": "S:\\VirtualLabs\\Image\\VM Template\\KVS Template",
+  "destVhdpath": "S:\\VirtualLabs\\Image\\templates",
+  "SwitchCount": "2",
+  "kvsVMCount": "1",
+  "posVMCount": "1",
+  "gscVMCount": "1"
+  
+}

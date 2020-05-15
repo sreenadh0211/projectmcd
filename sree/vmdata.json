@@ -1,0 +1,45 @@
+[{
+	"NIC": [{
+			"Name": "NIC1",
+			"NetAdapterName": "Ethernet",
+            "SwitchType": "private"
+		},
+		{
+			"Name": "NIC2",
+			"NetAdapterName": "VirtualBox Host-Only Network",
+            "SwitchType": "External"
+		}
+	],
+
+
+	"VM": [{
+			"VMName": "Server1",
+			"RAM": 4096,
+			"core": 2,
+			"cpuUtilization": 100,
+			"VHDPath": [{
+					"path": "C:\\mcdlab\\Virtualization\\pr7.vhdx"
+				},
+				{
+					"path": "C:\\mcdlab\\Virtualization\\Server2012.vhdx"
+				}
+			],
+			"Gen": 1,
+			"NICname": "NIC1",
+			"physicalpath": "C:\\Anup"
+		},
+		{
+			"VMName": "Server2",
+			"RAM": 4096,
+			"core": 1,
+			"cpuUtilization": 100,
+			"VHDPath": [{
+					"path": "C:\\mcdlab\\Virtualization\\windows10.vhdx"
+				}
+			],
+			"Gen": 2,
+			"NICname": "NIC1",
+			"physicalpath": "C:\\Anup"
+		}
+	]
+}]

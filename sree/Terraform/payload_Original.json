@@ -1,0 +1,121 @@
+{
+	"vLABCONFIG": [{
+		"Market": "DE",
+		"NewPOSCoreversion": "NP6.1.36",
+		"RFMPackageersion": "x.x",
+		"RCTTopology": "x.x",
+		"StoreId": "11111",
+		"Subnet": "10.0.0.0/24",
+		"Platform": "Cloud || On-premises",
+		"Cloud": {
+			"id": "xxxxx",
+			"Credentials": "Encrypted"
+		},
+
+		"OnpPremises": {
+			"id": "xxxxx",
+			"Credentials": "Encrypted"
+		},
+
+
+
+		"VM": [{
+				"VMName": "FC_POS_1",
+				"RAM": 4096,
+				"core": 2,
+				"cpuUtilization": 100,
+				"Image": "PosReady7",
+				"Hostname": "($Storeid)POS01",
+				"IP": "10.0.0.81",
+				"path": "S:\\VirtualLabs\\hyperv",
+				"templateVhdpath": "S:\\VirtualLabs\\Image\\templates",
+				"VHDPath": [{
+					"path": "S:\\VirtualLabs\\Image\\VM Template\\KVS Template\\pr7.vhdx",
+					"MarketSpecificDelta": ""
+				}],
+				"Gen": 1,
+				"NICname": "NIC1",
+				"physicalpath": "."
+			},
+			{
+				"VMName": "FC_POS_2",
+				"RAM": 4096,
+				"core": 2,
+				"cpuUtilization": 100,
+				"Image": "PosReady7",
+				"Hostname": "($Storeid)POS02",
+				"IP": "10.0.0.82",
+				"path": "S:\\VirtualLabs\\hyperv",
+				"templateVhdpath": "S:\\VirtualLabs\\Image\\templates",
+				"VHDPath": [{
+					"path": "S:\\VirtualLabs\\Image\\VM Template\\KVS Template\\pr7.vhdx",
+					"MarketSpecificDelta": ""
+				}],
+				"Gen": 1,
+				"NICname": "NIC1",
+				"physicalpath": "."
+			},
+			{
+				"VMName": "KVS_MFY_S1",
+				"RAM": 4096,
+				"core": 2,
+				"cpuUtilization": 100,
+				"Image": "PosReady7",
+				"Hostname": "($Storeid)KVS01",
+				"IP": "10.0.0.101",
+				"path": "S:\\VirtualLabs\\hyperv",
+				"templateVhdpath": "S:\\VirtualLabs\\Image\\templates",
+				"VHDPath": [{
+					"path": "S:\\VirtualLabs\\Image\\VM Template\\KVS Template\\pr7.vhdx",
+					"MarketSpecificDelta": ""
+				}],
+				"Gen": 1,
+				"NICname": "NIC1",
+				"physicalpath": "."
+			},
+			{
+				"VMName": "BOS_server",
+				"RAM": 4096,
+				"core": 1,
+				"cpuUtilization": 100,
+				"Image": "Windows10 IOT",
+				"Hostname": "($Storeid)BOS01",
+				"IP": "10.0.0.1",
+				"path": "S:\\VirtualLabs\\hyperv",
+				"templateVhdpath": "S:\\VirtualLabs\\Image\\templates",
+				"VHDPath": [{
+					"path": "S:\\VirtualLabs\\Image\\VM Template\\KVS Template\\windows10.vhdx",
+					"MarketSpecificDelta": ""
+				}],
+				"Gen": 2,
+				"NICname": "NIC1",
+				"physicalpath": "."
+			},
+			{
+				"VMName": "GSC_server",
+				"RAM": 4096,
+				"core": 1,
+				"cpuUtilization": 100,
+				"Image": "Server2012",
+				"Hostname": "($Storeid)GSC01",
+				"path": "S:\\VirtualLabs\\hyperv",
+				"templateVhdpath": "S:\\VirtualLabs\\Image\\templates",
+				"VHDPath": [{
+					"path": "C:\\mcdlab\\Virtualization\\server2012.vhdx",
+					"MarketSpecificDelta": ""
+				}],
+				"Gen": 2,
+				"NICname": "NIC1",
+				"physicalpath": "."
+			}
+		],
+
+
+		"NIC": [{
+			"Name": "NIC1",
+			"NetAdapterName": "Ethernet",
+			"SwitchType": "private"
+		}]
+	}]
+
+}
